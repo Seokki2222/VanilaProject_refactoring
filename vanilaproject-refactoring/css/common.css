@@ -1,0 +1,17 @@
+.filled-button {
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: var(--111111, #111);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.border-button {
+    padding: 6px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--CACACB, #CACACB);
+    background: var(--FFFFFF, #FFF);
+    cursor: pointer;
+}
+

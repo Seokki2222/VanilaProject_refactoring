@@ -1,0 +1,229 @@
+.nav-header {  
+    display: flex;
+    background: var(--F5F5F5, #F5F5F5);
+    height: 36px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-header .nav-header-list {
+    display: flex;
+    height: 36px;
+    padding: 7.5px 0;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-header .nav-header-list li > a {    
+    color: var(--111111, #111);
+    font-family: "Noto Sans KR";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px; /* 175% */
+    padding-right: 12px;
+    border-right: 1px solid var(--111111, #111);
+}
+
+.nav-header .nav-header-list li:last-child > a {
+    border-right: none;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.nav-menu {
+    display: flex;    
+    align-items: center;
+    height: 60px;
+}
+
+.nav-menu li {
+    padding: 15px 12px;
+}
+
+.nav-menu li > a {
+    color: var(--111111, #111);
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    cursor: pointer;
+}
+
+.nav-item {
+   display: flex;
+   align-items: center;
+   gap: 4px;   
+}
+
+.nav-item .search-bar {
+    display: flex;
+    gap: 8px;
+    padding: 7px 6px 7px 12px;
+    border-radius: 24px;
+    background: var(--F5F5F5, #F5F5F5);    
+    margin-right: 12px;
+}
+
+.nav-item .search-bar > input {
+    width: 118px;
+    border: none;
+    background: none;
+    color: var(--707072, #707072);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nav-item > img {
+    padding: 6px;    
+}
+
+.sidebar-wrapper {
+    visibility: hidden;
+}
+
+@media(max-width: 430px) {
+    .nav-header {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;  
+        align-items: center;
+        justify-content: space-between;                      
+    }
+
+    .nav-mobile > img {
+        width: 76px;
+        height: 60px;
+        flex-shrink: 0;
+    }
+
+    .nav-mobile .nav-mobile-item {
+        display: flex;
+        gap: 4px;
+    }
+
+    .nav-mobile .nav-mobile-item > img {
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    .sidebar-wrapper {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.4); 
+        opacity: 0; 
+        visibility: hidden; 
+        transition: opacity 0.5s ease, visibility 0.5s ease; 
+        z-index: 1000; 
+      }
+  
+      .sidebar-wrapper.active {
+        opacity: 1;
+        visibility: visible;
+      }
+  
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: -80%;
+        width: 80%;
+        height: 100vh;
+        background: #ffffff;
+        transition: right 0.5s ease;
+        z-index: 1001;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+      }
+  
+      .sidebar.active {
+        right: 0; 
+      }
+
+      .close-button {           
+        display: block; 
+        width: 29px;
+        height: 29px;       
+        cursor: pointer;
+      }
+
+      .sidebar-button-wrapper {
+        display: flex;
+        gap: 20px;
+        margin-left: 20px;
+      }
+
+      .basic-button > span {
+        color: var(--FFFFFF, #FFF);
+        text-align: center;
+        font-family: "Noto Sans KR";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+      }
+
+      .sidebar-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;               
+        width: 100%;
+      }
+
+      .sidebar-menu > li > a {
+        color: var(--111111, #111);
+        font-family: "Noto Sans KR";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 116.667% */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: 20px;
+        
+      }
+
+      .sidebar-sub-menu {
+        margin-left: 20px;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sidebar-sub-menu > li > a {
+        color: var(--111111, #111);
+        font-family: "Noto Sans KR";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        align-items: center;
+      }
+}
