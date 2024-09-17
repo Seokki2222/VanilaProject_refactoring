@@ -8,7 +8,8 @@ class Header extends HTMLElement {
             '../../css/header.css',
             '../../css/layout.css',
             '../../css/reset.css',
-            '../../css/common.css'
+            '../../css/common.css',
+            'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'
         ];
 
         cssFiles.forEach(href => {
@@ -18,13 +19,14 @@ class Header extends HTMLElement {
             document.head.appendChild(link);
         });
 
-        this.innerHTML = `
+
+        this.innerHTML  = `
             <header class="nav-header">
         <ul class="nav-header-list container">
-            <li><a>매장찾기</a></li>                        
-            <li><a>매장찾기</a></li>            
-            <li><a>매장찾기</a></li>            
-            <li><a>매장찾기</a></li>
+            <li><a href="../../pages/findStore/index.html">매장찾기</a></li>                        
+            <li><a href="../../pages/customerService/index.html">고객센터</a></li>            
+            <li><a href="../../pages/signup/index.html">가입하기</a></li>            
+            <li><a href="../../pages/signin/index.html">로그인</a></li>
         </ul>
    </header>
 

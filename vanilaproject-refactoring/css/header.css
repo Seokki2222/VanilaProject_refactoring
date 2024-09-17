@@ -23,6 +23,7 @@
     line-height: 21px; /* 175% */
     padding-right: 12px;
     border-right: 1px solid var(--111111, #111);
+    cursor: pointer;
 }
 
 .nav-header .nav-header-list li:last-child > a {
