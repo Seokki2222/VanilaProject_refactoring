@@ -91,6 +91,7 @@
 
 .sidebar-wrapper {
     visibility: hidden;
+    height: 0;
 }
 
 @media(max-width: 430px) {
@@ -139,7 +140,7 @@
   
       .sidebar-wrapper.active {
         opacity: 1;
-        visibility: visible;
+        visibility: visible;        
       }
   
       .sidebar {

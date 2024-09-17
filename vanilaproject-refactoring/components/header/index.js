@@ -33,7 +33,7 @@ class Header extends HTMLElement {
         <img src="../../assets/logo.svg"/>
 
         <ul class="nav-menu">
-            <li><a>New & Featured</a></li>
+            <li><a href="../../pages/products/index.html">New & Featured</a></li>
             <li><a>Men</a></li>
             <li><a>Women</a></li>
             <li><a>Kids</a></li>
