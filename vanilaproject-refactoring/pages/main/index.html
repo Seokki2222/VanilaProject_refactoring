@@ -4,13 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanila Project</title>
-    <link rel="stylesheet" href="index.css" />   
+    <link rel="stylesheet" href="index.css"/>   
+    <link rel="stylesheet" href="../../css/reset.css"/>   
+    <link rel="stylesheet" href="../../css/common.css"/> 
+    <link rel="stylesheet" href="../../css/layout.css"/>     
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
     <script src="../../components/header/index.js"></script>
 </head>
 <body>
   <custom-header/>
-  
+
+  <main class="container section-wrapper">
+    <!-- 인트로 -->
+    <section class="section-intro">
+      <img src="../../assets/banner.png"/>
+        <h1>아무나 오를 수 없는 승자의 자리.</h1>
+        <p>전부를 내건 이들만이 차지하는 것.</p>
+        <button class="filled-button">자세히 보기</button>
+    </section>
+
+    <!-- Win On Air -->
+     <section class="section-category-wrapper">      
+      <h1>Win On Air</h1>
+
+       <div class="section-category">
+        <article>
+          <img src="../../assets/winonair1.png"/>
+          <p>의류</p>
+          <button class="filled-button light">
+            구매하기
+          </button>
+        </article>
+        <article>
+          <img src="../../assets/winonair2.png"/>
+          <p>신발</p>
+          <button class="filled-button light">
+            구매하기
+          </button>
+        </article>        
+        <article>
+          <img src="../../assets/winonair3.png"/>
+          <p>악세사리 & 용품</p>
+          <button class="filled-button light">
+            구매하기
+          </button>
+        </article>
+       </div>
+     </section>
+
+     <!-- 나이키 잼 -->
+     <section class="section-intro">
+      <img src="../../assets/nikejam.png"/>
+      <p style="margin-top: 24px;">신제품</p>
+        <h1>나이키 잼</h1>
+        <p>브레이킹을 위해 탄생한 나이키 잼 컬렉션을 만나 보세요.</p>
+        <button class="filled-button">구매하기</button>
+    </section>
+
+    <!-- 나이키 x 자크뮈스 -->
+    <section class="section-intro">
+      <img src="../../assets/collection.png"/>
+        <p style="margin-top: 24px;">새로운 컬렉션</p>
+        <h1>나이키 X 자크뮈스</h1>
+        <p>세련된 실루엣과 감각적인 컬러가 조화를 이루는 나이키 X 자크뮈스 컬렉션은 스포츠웨어에 새로운 변화를 불러일으킵니다.</p>
+        <button class="filled-button">컬렉션 구매하기</button>
+    </section>
+  </main>
 </body>
 </html>

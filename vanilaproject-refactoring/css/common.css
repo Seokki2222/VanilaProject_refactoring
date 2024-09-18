@@ -7,6 +7,11 @@
     cursor: pointer;
 }
 
+.light {    
+    background: var(--FFFFFF, #FFF);
+    color: var(--111111, #111);
+}
+
 .border-button {
     padding: 6px 16px;
     border-radius: 999px;

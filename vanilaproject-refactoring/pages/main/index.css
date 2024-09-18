@@ -1,2 +1,188 @@
+/* 공통 레이아웃 */
+
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 84px;    
+}
+
+.section-wrapper > section:first-child {
+    margin-top: 58px;
+}
+
+/* 인트로 */
+
+.section-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.section-intro > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;    
+}
+
+.section-intro > h1 {
+    color: var(--111111, #111);
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px; /* 120% */
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+
+.section-intro > p {
+    color: var(--111111, #111);
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    margin-top: 8px;
+}
+
+.section-intro > button {
+    margin-top: 30px;
+    color: var(--FFFFFF, #FFF);
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+}
+
+/* 카테고리 */
+
+.section-category-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
 
+.section-category {
+    display: flex;
+    gap: 12px;
+}
+
+.section-category-wrapper h1 {
+    color: var(--111111, #111);
+font-family: "Noto Sans KR";
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 48px; /* 150% */
+}
+
+.section-category > article {
+    position: relative;
+}
+
+.section-category > article > button {
+    position: absolute;
+    left: 48px;
+    bottom: 48px;
+    color: var(--111111, #111);
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+}
+
+.section-category > article > p {
+    position: absolute;
+    left: 48px;
+    bottom: 112.2px;
+    color: var(--FFFFFF, #FFF);
+    font-family: "Noto Sans KR";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 150% */
+}
+
+.section-category > article > img {
+    object-fit: cover;
+}
+
+@media(max-width: 430px) {
+    /* 인트로 */
+    .section-wrapper > section:first-child {
+        margin-top: 24px;
+    }
+
+    .section-intro > img {        
+        height: 457px;
+        object-fit: cover;
+    }
+
+    .section-intro {
+        align-items: flex-start;
+    }
+
+    .section-intro > h1 {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48px;
+        margin-top: 24px;
+        text-align: left;
+    }
+
+    .section-intro > p {
+        margin-top: 24px;
+        text-align: left;
+    }
+
+    .section-intro > button {
+        margin-top: 24px;
+    }
+
+    /* 카테고리 */    
+
+    .section-category-wrapper > h1 {
+        color: var(--111111, #111);        
+        font-size: 24px;        
+        font-weight: 500;
+        line-height: 36px; /* 150% */
+    }
+
+    .section-category {                
+        width: 100vw;
+        overflow-x: scroll;    
+        scroll-behavior: smooth;    
+    }
+
+    .section-category > article > img {        
+        max-height: 375px;
+        aspect-ratio:  1 / 1.25;
+    }
+
+    .section-category > article:last-child {
+        padding-right: 12px;
+    }
+
+    .section-category > article > button {
+        display: none;
+    }
+
+    .section-category > article > p {
+        position: relative;
+        top: 0;
+        left: 0;
+        color: var(--111111, #111);
+        font-family: "Noto Sans KR";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 35px; /* 175% */
+    }
+ }
