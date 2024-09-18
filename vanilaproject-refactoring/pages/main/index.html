@@ -12,11 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <script src="../../components/header/index.js"></script>
+
 </head>
 
 <body>
   <custom-header />
-
+<div style="max-width: 1660px; margin: 0 auto;">
   <main class="container section-wrapper">
     <!-- 인트로 -->
     <section class="section-intro">
@@ -112,13 +113,13 @@
 
       <div class="section-featured">
         <article>
-          <img src="../../assets/featured1.png"/>      
-          <button class="filled-button light">워크아웃 에센셜</button>    
+          <img src="../../assets/featured1.png" />
+          <button class="filled-button light">워크아웃 에센셜</button>
           <button class="filled-button">구매하기</button>
         </article>
 
         <article>
-          <img src="../../assets/featured2.png"/>          
+          <img src="../../assets/featured2.png" />
           <button class="filled-button light">나이키 메트콘 9</button>
           <button class="filled-button">구매하기</button>
         </article>
@@ -126,28 +127,194 @@
     </section>
 
     <!-- Always Iconic -->
-    <section>
+    <section class="section-slider">
       <h1>Always Iconic</h1>
 
       <div class="slider-wrapper">
-        <!-- 슬라이드 버튼 -->
-        <div class="button-wrapper">
-            <img src="../../public/icon/LeftButton.png" class="button left-button" />
-            <img src="../../public/icon/RightButton.png" class="button right-button" />
-        </div>
-
-        <!-- 요소 -->
+        <nav class="button-wrapper">
+          <button class="slider-left-button">
+            <img src="../../assets/sliderButtonLeft.svg" />
+          </button>
+          <button class="slider-right-button">
+            <img src="../../assets/sliderButtonRight.svg" />
+          </button>
+        </nav>
         <ul class="slider">
-                <li><img src="../../public/images/main/Product1.png" /></li>
-                <li><img src="../../public/images/main/Product2.png" /></li>
-                <li><img src="../../public/images/main/Product3.jpeg" /></li>
-                <li><img src="../../public/images/main/Product4.png" /></li>
-                <li><img src="../../public/images/main/Product5.png" /></li>
-                <li><img src="../../public/images/main/Product6.png" /></li>
+          <li>
+            <img src="../../assets/product4.png" />
+          </li>
+
+          <li>
+            <img src="../../assets/product5.png" />
+          </li>
+
+          <li>
+            <img src="../../assets/product4.png" />
+          </li>
+
+          <li>
+            <img src="../../assets/product5.png" />
+          </li>
+
+          <li>
+            <img src="../../assets/product4.png" />
+          </li>
+
+          <li>
+            <img src="../../assets/product5.png" />
+          </li>
+
+          <li>
+            <img src="../../assets/product4.png" />
+          </li>
+
+          <li>
+            <img src="../../assets/product5.png" />
+          </li>
         </ul>
-    </div>
+      </div>
+    </section>
+
+    <!-- Shop by Sport -->
+    <section class="section-category-wrapper" style="width: 100%;">
+      <h1>Shop by Sport</h1>
+      <div class="button-wrapper">
+        <img class="left-button" style="margin-right: 12px;" src="../../assets/leftButton.svg" />
+        <img class="right-button" src="../../assets/rightButton.svg" />
+      </div>
+
+      <div class="section-sport">
+
+        <article>
+          <img src="../../assets/sport1.png" />
+          <div>
+            <h3>나이키 트레이닝</h3>
+            <p>한계에 도전하는 여정과 함께할 아이템</p>
+            <button>
+              구매하기
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <img src="../../assets/sport2.png" />
+          <div>
+            <h3>나이키 트레일 러닝</h3>
+            <p>새로운 모험으로 이끌어 주는 아이템</p>
+            <button>
+              구매하기
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <img src="../../assets/sprot3.png" />
+          <div>
+            <h3>나이키 축구</h3>
+            <p>경기 중 독보적인 존재감을 드러낼 아이템</p>
+            <button>
+              구매하기
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <img src="../../assets/sport4.png" />
+          <div>
+            <h3>나이키 골프</h3>
+            <p>골프 필드 위 자신감을
+              더해주는 스타일</p>
+            <button>
+              구매하기
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <img src="../../assets/sport5.png" />
+          <div>
+            <h3>나이키 테니스</h3>
+            <p>강력한 서브를
+              돋보이게 하는 스타일</p>
+            <button>
+              구매하기
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 멤버쉽 -->
+    <section class="section-membership section-category-wrapper">
+      <h1>나이키 멤버쉽</h1>
+      <div class="button-wrapper">
+        <p>멤버 가입하기</p>
+        <img class="left-button" src="../../assets/leftButton.svg" />
+        <img class="right-button" src="../../assets/rightButton.svg" />
+      </div>
+
+      <div class="section-category">
+        <article>
+          <img src="../../assets/membership1.png" />
+          <p>스포츠 & 웰니스 앱</p>
+          <h1>언제 어디서든 운동하기</h1>
+          <button class="filled-button">
+            구매하기
+          </button>
+        </article>
+        <article>
+          <img src="../../assets/membership2.png" />
+          <p>멤버 전용 제품</p>
+          <h1>멤버만을 위한 제품 혜택</h1>
+          <button class="filled-button">
+            구매하기
+          </button>
+        </article>
+        <article>
+          <img src="../../assets/membership3.png" />
+          <p>멤버 리워드</p>
+          <h1>운동과 쇼핑을 위한 특별한 혜택</h1>
+          <button class="filled-button">
+            구매하기
+          </button>
+        </article>
+      </div>
     </section>
   </main>
+</div>
 </body>
+<script>
+  const slider = document.querySelector('.slider');
+  const slides = slider.querySelectorAll('li');
+  const leftButton = document.querySelector('.slider-left-button');
+  const rightButton = document.querySelector('.slider-right-button');
+
+  let currentIdx = Math.floor(slides.length / 2);  // 중간 아이템으로 초기화
+  let liWidth = slides[0].clientWidth;
+  let translate = -liWidth * currentIdx;  // 중간 아이템에 맞춰 초기 translate 설정
+
+  // 초기 슬라이더 위치를 중간으로 설정
+  slider.style.transform = `translateX(${translate}px)`;
+
+
+  rightButton.addEventListener('click', function () {
+    event.preventDefault();
+    if (currentIdx !== slides.length - 1) {
+      translate -= liWidth;
+      slider.style.transform = `translateX(${translate}px)`;
+      currentIdx += 1;
+    }
+  });
+
+  leftButton.addEventListener('click', function () {
+    event.preventDefault();
+    if (currentIdx !== 0) {
+      translate += liWidth;
+      slider.style.transform = `translateX(${translate}px)`;
+      currentIdx -= 1;
+    }
+  });
+</script>
 
 </html>
