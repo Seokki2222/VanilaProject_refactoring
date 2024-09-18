@@ -21,7 +21,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	vertical-align: baseline;	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -55,6 +55,6 @@ table {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-html {
-	overflow-x: hidden;
+body, html {
+    overflow-x: hidden; /* 전체 페이지의 수평 스크롤을 방지 */
 }
