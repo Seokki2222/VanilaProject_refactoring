@@ -4,6 +4,7 @@
     height: 36px;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
 }
 
 .nav-header .nav-header-list {
@@ -37,7 +38,14 @@
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;  
+    position: fixed;
+    height: 60px;
+    background: #ffffff;     
+    z-index: 30;
+    left: 48px;
+    right: 48px;
+    transition: all 0.2s;
 }
 
 .nav-menu {
@@ -107,18 +115,25 @@
     .nav-mobile {
         display: flex;  
         align-items: center;
-        justify-content: space-between;                      
+        justify-content: space-between;   
+        position: fixed;
+        z-index: 30;
+        background: #ffffff;                   
+        width: 100%;
+        transition: all 0.2s;
     }
 
     .nav-mobile > img {
         width: 76px;
         height: 60px;
         flex-shrink: 0;
+        margin-left: 24px;
     }
 
     .nav-mobile .nav-mobile-item {
         display: flex;
-        gap: 4px;
+        gap: 4px;        
+        margin-right: 24px;
     }
 
     .nav-mobile .nav-mobile-item > img {

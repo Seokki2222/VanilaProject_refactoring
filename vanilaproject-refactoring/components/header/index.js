@@ -19,18 +19,19 @@ class Header extends HTMLElement {
             document.head.appendChild(link);
         });
 
-
-        this.innerHTML  = `
-            <header class="nav-header">
+        let header = `
+           <header class="nav-header">
         <ul class="nav-header-list container">
             <li><a href="../../pages/findStore/index.html">매장찾기</a></li>                        
             <li><a href="../../pages/customerService/index.html">고객센터</a></li>            
             <li><a href="../../pages/signup/index.html">가입하기</a></li>            
             <li><a href="../../pages/signin/index.html">로그인</a></li>
         </ul>
-   </header>
+   </header>`;
 
-   <div class="container">
+        this.innerHTML = `
+   
+   <div>
     <nav class="nav">
         <img src="../../assets/logo.svg"/>
 
@@ -103,20 +104,59 @@ class Header extends HTMLElement {
     }
 
     addEventListeners() {
-        const menuBtn = document.querySelector('.menu-button');
-        const closeBtn = document.querySelector('.close-button');
-        const sideWrapper = document.querySelector('.sidebar-wrapper');
-        const sideBar = document.querySelector('.sidebar');
+        const mediaQuery = window.matchMedia("(max-width: 430px)");
+        
+        if (mediaQuery.matches) { 
+            const menuBtn = document.querySelector('.menu-button');
+            const closeBtn = document.querySelector('.close-button');
+            const sideWrapper = document.querySelector('.sidebar-wrapper');
+            const sideBar = document.querySelector('.sidebar');
     
-        menuBtn.addEventListener('click', function() {
-            sideWrapper.classList.add('active');
-            sideBar.classList.add('active');
-        });
+            menuBtn.addEventListener('click', function () {
+                sideWrapper.classList.add('active');
+                sideBar.classList.add('active');
+            });
     
-        closeBtn.addEventListener('click', function() {        
-            sideBar.classList.remove('active');
-            sideWrapper.classList.remove('active');
+            closeBtn.addEventListener('click', function () {
+                sideBar.classList.remove('active');
+                sideWrapper.classList.remove('active');
+            });
+
+            let lastScrollTop = 0;
+            const navbar = document.querySelector(".nav-mobile");
+
+            window.addEventListener('scroll', function () {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+                if (scrollTop > lastScrollTop) {
+                    // 아래로 스크롤할 때 네비게이션 바 숨김
+                    navbar.style.top = "-60px"; // 네비게이션 바의 높이만큼 값을 설정
+                } else {
+                    // 위로 스크롤할 때 네비게이션 바 보이게 함
+                    navbar.style.top = "0";
+                }
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // iOS에서 음수 방지
+            });
+        } else {             
+        let lastScrollTop = 0;
+        const navbar = document.querySelector(".nav");
+        window.addEventListener('scroll', function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // 아래로 스크롤할 때 네비게이션 바 숨김
+                navbar.style.top = "-60px"; // 네비게이션 바의 높이만큼 값을 설정
+            } else {
+                // 위로 스크롤할 때 네비게이션 바 보이게 함
+                navbar.style.top = "0";
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // iOS에서 음수 방지
         });
+        }
+
+       
+
+       
     }
 }
 

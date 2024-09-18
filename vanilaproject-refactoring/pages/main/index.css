@@ -7,7 +7,7 @@
 }
 
 .section-wrapper > section:first-child {
-    margin-top: 58px;
+    margin-top: calc(60px + 58px);
 }
 
 section:nth-last-of-type(1) {
@@ -478,6 +478,7 @@ line-height: 48px; /* 150% */
         width: 100vw;
         gap: 12px;
         overflow-x: scroll;
+        overflow-y: hidden;
     }
 
     /* Shop by Sport */
