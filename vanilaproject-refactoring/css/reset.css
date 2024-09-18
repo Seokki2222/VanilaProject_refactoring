@@ -30,7 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	overflow-x: scroll;
 }
 ol, ul {
 	list-style: none;
@@ -54,4 +53,8 @@ table {
 	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	overflow-x: hidden;
 }

@@ -1,0 +1,66 @@
+.signup-container {
+    max-width: 502px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+.signup-container > img {
+    margin: 20px 0px;
+}
+
+.signup-container > h1 {
+    color: #000;
+    font-family: Pretendard;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 114.286% */
+}
+
+.signup-container > form {
+    width: 100%;
+    margin-top: 46px;
+}
+
+.signup-container > form > div {        
+    border-radius: 8px;
+    border: 1px solid var(--707072, #707072);
+    flex: 1;
+}
+
+.signup-container > form > div > input {    
+    border: none;
+    margin: 16px 12px;
+    color: var(--111111, #111111);
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.signup-container > p {
+    color: #757575;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 46px;
+}
+
+.signup-container > button {
+    margin-top: 64px;    
+}
+
+@media(max-width: 430px) {
+    .signup-container {
+        margin: 0px 36px;
+    }
+
+    .signup-container > form {
+        margin-top: 28px;
+    }
+}
