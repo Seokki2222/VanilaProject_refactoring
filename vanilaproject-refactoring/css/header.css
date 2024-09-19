@@ -43,15 +43,19 @@
     height: 60px;
     background: #ffffff;     
     z-index: 30;
-    left: 48px;
-    right: 48px;
+    left: 0;
+    right: 0;
     transition: all 0.2s;
+}
+
+.nav > img {
+  margin-left: 48px;
 }
 
 .nav-menu {
     display: flex;    
     align-items: center;
-    height: 60px;
+    height: 60px;    
 }
 
 .nav-menu li {
@@ -72,6 +76,7 @@
    display: flex;
    align-items: center;
    gap: 4px;   
+   margin-right: 48px;
 }
 
 .nav-item .search-bar {
