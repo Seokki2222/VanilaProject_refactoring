@@ -89,6 +89,7 @@ line-height: 48px; /* 150% */
 
 .section-category > article {
     position: relative;
+    flex: 1;
 }
 
 .section-category > article > button {
@@ -416,8 +417,7 @@ line-height: 48px; /* 150% */
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 16px;
-        flex: 1;
+        gap: 16px;        
     }
 
     .section-category > article > p {
